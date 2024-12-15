@@ -1,0 +1,148 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round';
+    user-select: none;
+}
+body
+{
+    background: antiquewhite;
+    color:rgb(29, 88, 148);
+    font-weight: 900;
+}
+h1
+{
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    font-size: 8vh;
+    top: 5vh;
+    font-weight: 600;
+}
+.board
+{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#l1, #l2, #l3, #l4, #winV, #winH, #winD1, #winD2
+{
+    background: rgb(29, 88, 148);
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+#l1
+{
+    width: .5vh;
+    height: 100%;
+    left: 33.33%;
+}
+#l2
+{
+    width: .5vh;
+    height: 100%;
+    right: 33.33%;
+}
+#l3
+{
+    height: .5vh;
+    width: 100%;
+    top: 33.33%;
+}
+#l4
+{
+    height: .5vh;
+    width: 100%;
+    bottom: 33.33%;
+}
+table, tr, td
+{
+    position: relative;
+}
+table
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 2vh;
+    border: .8vh solid rgb(29, 88, 148);
+}
+button
+{
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    margin: 0;
+    background-color: transparent;
+    font-size: 6vh;
+    color:rgb(29, 88, 148);
+    font-weight: 500;
+    transition: all 1s ease;
+}
+#result
+{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 50vh;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 4vh;
+}
+#winV
+{
+    height: .5vh;
+    width: 87%;
+    left: 0;
+    right: 0;
+    top: 49%;
+    margin: auto;
+    display: none;
+}
+#winH
+{
+    width: .5vh;
+    height: 87%;
+    left: 0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+#winD1
+{
+    height: .5vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: rotate(45deg);
+    margin: auto;
+    display: none;
+}
+#winD2
+{
+    height: .5vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    margin: auto;
+    display: none;
+}

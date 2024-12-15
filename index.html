@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="icon" type="image/x-icon" href="tic-tac-toe.png">
+    <link rel="stylesheet" href="style.css">  
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="board">
+        <div id="l1"></div>
+        <div id="l2"></div>
+        <div id="l3"></div>
+        <div id="l4"></div>
+        <div id="winV"></div>
+        <div id="winH"></div>
+        <div id="winD1"></div>
+        <div id="winD2"></div>
+        <table>
+            <tr>
+                <td><button id="c1" onclick="ne()"></button></td>
+                <td><button id="c2" onclick="ne()"></button></td>
+                <td><button id="c3" onclick="ne()"></button></td>
+            </tr>
+            <tr>
+                <td><button id="c4" onclick="ne()"></button></td>
+                <td><button id="c5" onclick="ne()"></button></td>
+                <td><button id="c6" onclick="ne()"></button></td>
+            </tr>
+            <tr>
+                <td><button id="c7" onclick="ne()"></button></td>
+                <td><button id="c8" onclick="ne()"></button></td>
+                <td><button id="c9" onclick="ne()"></button></td>
+            </tr>
+        </table>
+    </div>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
